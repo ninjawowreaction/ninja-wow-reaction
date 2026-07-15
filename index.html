@@ -47,71 +47,8 @@ nav a{
 color:white;
 text-decoration:none;
 margin-left:25px;
-transition:.3s;
-font-weight:500;
-}
-
-nav a:hover{
-color:#39ff14;
-}
-
-.hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1600&q=80');
-
-background-size:cover;
-background-position:center;
-}
-
-.hero h1{
-font-size:65px;
-color:#39ff14;
-text-shadow:0 0 20px #39ff14;
-animation:zoom 2s ease;
-}
-
-.hero p{
-margin-top:18px;
-font-size:22px;
-color:#ddd;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:15px 40px;
-background:#39ff14;
-color:#000;
-font-weight:bold;
-border-radius:40px;
-text-decoration:none;
-transition:.4s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-box-shadow:0 0 25px #39ff14;
-}
-
-@keyframes zoom{
-from{
-transform:scale(.8);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
-}.gallery{
+transition:.3s.gallery{
 padding:100px 8%;
-background:#0b0b0b;
 text-align:center;
 }
 
@@ -129,15 +66,14 @@ gap:25px;
 
 .card{
 background:#111;
-border-radius:20px;
+border-radius:15px;
 overflow:hidden;
 transition:.4s;
-border:1px solid #222;
 }
 
 .card:hover{
 transform:translateY(-10px);
-box-shadow:0 0 25px #39ff14;
+box-shadow:0 0 20px #39ff14;
 }
 
 .card img{
@@ -147,12 +83,13 @@ object-fit:cover;
 }
 
 .card h3{
-padding:15px;
+padding:20px;
 }
 
 .specs{
 padding:100px 8%;
 text-align:center;
+background:#0b0b0b;
 }
 
 .specs h2{
@@ -168,39 +105,21 @@ gap:20px;
 }
 
 .box{
-background:#111;
+background:#151515;
 padding:30px;
-border-radius:18px;
-transition:.4s;
+border-radius:15px;
+transition:.3s;
 }
 
 .box:hover{
-background:#39ff14;
-color:#000;
 transform:scale(1.05);
+box-shadow:0 0 15px #39ff14;
 }
 
 footer{
 background:#000;
-padding:30px;
+padding:40px;
 text-align:center;
-color:#aaa;
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-nav{
-display:none;
-}
-
 }
 
 </style>
@@ -211,42 +130,13 @@ display:none;
 <header>
 <div class="logo">ZX10R</div>
 
-<nav>
-<a href="#">Home</a>
-<a href="#gallery">Gallery</a>
-<a href="#specs">Specs</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div>
-
-<h1>Kawasaki ZX10R</h1>
-
-<p>Feel The Power • Feel The Speed</p>
-
-<a href="#gallery" class="btn">Explore Bike</a>
-
+<nav<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80">
+<h3>Rear View</h3>
 </div>
-
-</section>
-
-<section class="gallery" id="gallery">
-
-<h2>ZX10R Gallery</h2>
-
-<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
-<h3>Front View</h3>
-</div>
-
-<div class="card"><div class="card">
-<img src="https://images.unsplash.com/photo-1517846693594-1567da72af75?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80">
 <h3>Night Ride</h3>
 </div>
 
@@ -256,64 +146,35 @@ display:none;
 
 <section class="specs" id="specs">
 
-<h2>ZX10R Specifications</h2>
+<h2>Specifications</h2>
 
 <div class="spec-grid">
 
 <div class="box">
-<h3>Engine</h3>
-<p>998cc Inline-4</p>
-</div>
+<h3>Engine</<section id="contact" style="padding:100px 8%;text-align:center;background:#0b0b0b;">
 
-<div class="box">
-<h3>Power</h3>
-<p>203 HP</p>
-</div>
-
-<div class="box">
-<h3>Top Speed</h3>
-<p>299+ KM/H</p>
-</div>
-
-<div class="box">
-<h3>Gearbox</h3>
-<p>6 Speed</p>
-</div>
-
-<div class="box">
-<h3>Weight</h3>
-<p>207 KG</p>
-</div>
-
-<div class="box">
-<h3>Fuel Tank</h3>
-<p>17 Litres</p>
-</div>
-
-</div>
-
-  </section>
-<img src="https://images.unsplash<section id="contact" style="padding:100px 8%;text-align:center;background:#0b0b0b;">
-
-<h2 style="font-size:42px;color:#39ff14;">Connect With Me</h2>
+<h2 style="font-size:42px;color:#39ff14;">Contact</h2>
 
 <p style="margin:20px 0;font-size:18px;">
-Welcome to Ninja Wow Reaction. Follow for superbike content, rides and amazing videos.
+Welcome to Ninja Wow Reaction.<br>
+Follow for ZX10R videos, superbike content and rides.
 </p>
 
-<a href="#" class="btn">YouTube Channel</a>
+<a href="https://youtube.com/" target="_blank" class="btn">
+Visit YouTube
+</a>
 
 </section>
 
 <footer>
 
-<h3 style="color:#39ff14;">Ninja Wow Reaction</h3>
-
-<p style="margin-top:10px;">
-🏍️ Kawasaki ZX10R Fan Website
-</p>
+<h2 style="color:#39ff14;">Ninja Wow Reaction</h2>
 
 <p style="margin-top:15px;">
+🏍️ Kawasaki ZX10R Premium Website
+</p>
+
+<p style="margin-top:10px;">
 © 2026 All Rights Reserved
 </p>
 
@@ -321,13 +182,19 @@ Welcome to Ninja Wow Reaction. Follow for superbike content, rides and amazing v
 
 <script>
 
-const cards=document.querySelectorAll(".card");
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.opacity="0";
+card.style.transform="translateY(50px)";
+card.style.transition="0.8s";
+
+});
 
 window.addEventListener("scroll",()=>{
 
-cards.forEach(card=>{
+document.querySelectorAll(".card").forEach(card=>{
 
-let top=card.getBoundingClientRect().top;
+const top=card.getBoundingClientRect().top;
 
 if(top<window.innerHeight-100){
 
@@ -340,15 +207,7 @@ card.style.transform="translateY(0)";
 
 });
 
-cards.forEach(card=>{
-
-card.style.opacity="0";
-card.style.transform="translateY(50px)";
-card.style.transition=".8s";
-
-});
-
 </script>
 
 </body>
-  </html>
+</html>
