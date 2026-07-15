@@ -1,52 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ninja Wow Reaction</title>
-  <style>
-    body{
-      margin:0;
-      font-family:Arial,sans-serif;
-      background:#111;
-      color:white;
-      text-align:center;
-    }
-    header{
-      background:#ff3b3b;
-      padding:20px;
-      font-size:28px;
-      font-weight:bold;
-    }
-    .container{
-      padding:20px;
-    }
-    button{
-      background:#ff3b3b;
-      color:white;
-      border:none;
-      padding:12px 20px;
-      font-size:18px;
-      border-radius:8px;
-      cursor:pointer;
-    }
-    button:hover{
-      background:#e60000;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZX10R Premium</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+
+header{
+background:#00ff66;
+padding:20px;
+text-align:center;
+font-size:30px;
+font-weight:bold;
+color:black;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1400&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+color:#00ff66;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 35px;
+background:#00ff66;
+color:black;
+font-size:20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}.gallery{
+padding:50px 20px;
+text-align:center;
+}
+
+.gallery h2{
+color:#00ff66;
+margin-bottom:30px;
+font-size:35px;
+}
+
+.images{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.images img{
+width:300px;
+border-radius:15px;
+transition:.4s;
+}
+
+.images img:hover{
+transform:scale(1.05);
+}
+
+.specs{
+padding:50px 20px;
+text-align:center;
+}
+
+.specs h2{
+color:#00ff66;
+margin-bottom:20px;
+}
+
+.specs p{
+font-size:20px;
+margin:10px;
+}
+
+footer{
+background:#00ff66;
+color:black;
+padding:20px;
+text-align:center;
+margin-top:40px;
+font-weight:bold;
+}
+</style>
 </head>
+
 <body>
 
-<header>Ninja Wow Reaction</header>
+<header>
+Kawasaki ZX10R
+</header>
 
-<div class="container">
-  <h2>Welcome!</h2>
-  <p>Ye meri pehli website hai 🚀</p>
+<section class="hero">
+<h1>Feel The Speed</h1>
+<p>The King Of Super Bikes</p>
 
-  <button onclick="alert('Thanks for visiting! ❤️')">
-    Click Me
-  </button>
+<button class="btn"
+onclick="alert('Welcome ZX10R Lover! 🏍️')">
+Explore
+</button>
+
+</section>
+
+<section class="gallery">
+
+<h2>ZX10R Gallery</h2>
+
+<div class="images">
+
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"><img src="https://images.unsplash.com/photo-1517846693594-1567da72af75?auto=format&fit=crop&w=800&q=80">
+
 </div>
+
+</section>
+
+<section class="specs">
+
+<h2>Specifications</h2>
+
+<p>🏍️ Engine: 998cc Inline-4</p>
+<p>⚡ Power: 203 HP</p>
+<p>🚀 Top Speed: 299+ km/h</p>
+<p>⚙️ 6 Speed Gearbox</p>
+<p>💚 Color: Lime Green / Black</p>
+
+</section>
+
+<footer>
+
+© 2026 Ninja Wow Reaction | Made with ❤️
+
+</footer>
 
 </body>
 </html>
